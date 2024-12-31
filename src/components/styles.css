@@ -1,0 +1,71 @@
+/* עיצוב כללי לרכיב Investments */
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* רווח בין כל פריט */
+    padding: 2rem 1rem;
+    background-color: #ffffff; /* רקע לבן */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* הצללה מודרנית עם רדיוס */
+    max-width: 900px;
+    margin: 3rem auto;
+    font-family: 'Montserrat', sans-serif; /* גופן מודרני */
+    border: 1px solid #eeeeee; /* גבול רך */
+}
+
+/* עיצוב לרכיב InvestmentItem */
+.investment-item {  /* שיניתי מ-expense-item ל-investment-item */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* הוספת אפקט הובר */
+.investment-item:hover { /* שיניתי מ-expense-item ל-investment-item */
+    transform: scale(1.05); /* הגדלה קלילה */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* הצללה חזקה יותר */
+}
+
+/* עיצוב לתמונה של כל מטבע */
+.investment-item img {  /* שיניתי מ-expense-item ל-investment-item */
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 1rem;
+    border-radius: 10px; /* פינות מעוגלות לתמונה */
+    border: 2px solid #ddd; /* גבול עדין לתמונה */
+}
+
+/* עיצוב שם המטבע */
+.investment-item .details .name { /* שיניתי מ-expense-item ל-investment-item */
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize; /* הפיכת השם לאותיות ראשונות גדולות */
+}
+
+/* עיצוב לתאריך ואספקה */
+.investment-item .details .date,
+.investment-item .details .supply { /* שיניתי מ-expense-item ל-investment-item */
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* עיצוב למחיר */
+.investment-item .price { /* שיניתי מ-expense-item ל-investment-item */
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #3498db; /* צבע כחול עבור המחיר */
+}
+
+/* שינוי צבעים כללי */
+body {
+    background-color:#f1f1f1; /* רקע בהיר לדף */
+    color:#444; /* צבע טקסט כללי */
+}
